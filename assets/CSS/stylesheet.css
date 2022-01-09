@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 222, 222);
+}
+ 
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+header h1 {
+    display: flex;
+    padding: 10px 35px 10px 100px;
+    font-weight: 700;
+    background-color: rgb(187, 176, 176);
+    font: italic 40px helvetica;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+header ul li {
+    float: right;
+    position: relative;
+    top: 35px;
+    margin: 0 50px;
+    font: italic 25px helvetica;
+}
+
+header a {
+    color: white;
+    text-decoration: underline overline;
+}
+
+#Banner img {
+    width: 100%;
+}
+
+h2 {
+    margin: 20px 5px 40px 100px;
+    font: bold 40px helvetica;
+    border-right:rgb(0, 0, 0) solid;
+    text-decoration: underline;
+    min-width: 250px;
+}
+
+#About-Me, #Work {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#About-Me p {
+    margin: 50px;
+    font: 20px helvetica;
+    line-height: 2.0;
+}
+
+#Work a {
+    margin: 5px;
+    border: white double;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top-work-link {
+    background-image: url('../Pictures/challenge1.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin: 5px;
+}
+
+.work-link {
+    flex: 1;
+    display: inline-block;
+    width: auto;
+    background-image: url('../Pictures/challenge1.jpg');
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin: 5px;
+}
+
+#Contact h2 {
+    color: white;
+    font: 30px helvetica;
+    text-decoration: none;
+}
+
+footer ul li {
+    margin: 0 30px;
+    position: relative;
+    top: 25px;
+    float: right;
+    font: italic 15px helvetica;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    header, footer {
+        flex: auto;
+        flex-direction: column;
+    }
+
+    header h1, footer h2 {
+        align-self: center;
+        padding: 10px;
+    }
+
+    header ul li, footer ul li {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    #About-Me, #Work {
+        flex: auto;
+        flex-direction: column;
+        }
+    
+    #About-Me > h2, #Work > h2 {
+        border-style: none;
+        align-self: center;
+        }
+
+    .top-work-link, .work-link {
+        background-size: cover;
+        width: auto;
+        flex: auto;
+        width: 100%;
+        }
+}
