@@ -80,7 +80,7 @@ h2 {
 }
 
 .top-work-link {
-    background-image: url('Pictures/challenge1.jpg');
+    background-image: url('../Pictures/challenge1.jpg');
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,7 @@ h2 {
     flex: 1;
     display: inline-block;
     width: auto;
-    background-image: url('Pictures/challenge1.jpg');
+    background-image: url('../Pictures/challenge1.jpg');
     height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
