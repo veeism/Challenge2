@@ -57,8 +57,12 @@ h2 {
     margin-bottom: 25px;
 }
 
+.headshot {
+    margin: auto 20px auto 10px; 
+}
+
 #About-Me p {
-    margin: 50px;
+    margin: 10px;
     font: 20px helvetica;
     line-height: 2.0;
 }
@@ -143,6 +147,11 @@ footer a {
         border-style: none;
         align-self: center;
         }
+
+    .headshot {
+        display: block;
+        align-self: center;
+    }    
 
     .top-work-link, .work-link {
         background-size: cover;
